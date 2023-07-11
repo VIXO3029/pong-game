@@ -134,7 +134,7 @@ var Game = {
 			if (this.player.move === DIRECTION.UP) this.player.y -= this.player.speed;
 			else if (this.player.move === DIRECTION.DOWN) this.player.y += this.player.speed;
 
-			// On new serve (start of each turn) move the ball to the correct side
+			// On new serve (start of each turn) move the ball to the correct side in game
 			// and randomize the direction to add some challenge.
 			if (Pong._turnDelayIsOver.call(this) && this.turn) {
 				this.ball.moveX = this.turn === this.player ? DIRECTION.LEFT : DIRECTION.RIGHT;
